@@ -1,0 +1,52 @@
+# 间接访问
+*
+[]
+除了优先级外，下标引用和间接访问完全相同
+2[array] = array[2]，神奇吧
+
+# 内存管理、作用域、变量初始化
+函数作用域、代码块作用域、文件作用域、原型作用域
+
+属于文件作用域，缺省状态下为external链接属性
+static将external改为internal
+
+静态变量：默认为0
+自动变量：随机
+	堆：手动管理
+	栈：自动管理
+函数d在缺省情况下具有external链接属性
+
+# 函数
+```c
+return_type func_name(parameter list)
+{
+	body of the fun
+}
+param: formal real
+```
+参数：（按值传递 | 按地址传递）\
+传递给函数的是一份指针的拷贝，但是对指针执行间接访问操作所访问的对象是原先的数组\
+(ps:c没有按引用传递 即: func(&a))
+
+(ps:函数无效，因为实际交换的是参数的拷贝)
+```c
+void swap(int x,int y)
+{
+int tmp;
+
+tmp = x;
+x = y;
+y = tmp;
+}
+```
+(ps:函数有效，实际交换的是变量指针的拷贝)
+```c
+void swap(int *x,int *y)
+{
+int tmp;
+
+tmp = *x;
+*x = *y;
+*y = tmp;
+}
+```
