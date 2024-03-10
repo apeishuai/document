@@ -1,0 +1,39 @@
+[[/media/shuai/wxf files/shuai-files/Tool/test/gdb_Program.c][example 1]]
+[[/media/shuai/wxf files/shuai-files/Reference/《GDB》.org][GDB handout]]
+
+* Reference
+[[https://felix-knorr.net/posts/2022-02-27-direct-gdb.html][Felix Blog - Debugging with GDB]]
+/Entered on/ [2022-05-07 六 20:49]
+[[https://zhuanlan.zhihu.com/p/483372519][用 gdb 学 C 语言 - 知乎]]
+/Entered on/ [2022-05-16 一 00:05]
+[[https://www.adacore.com/gems/gem-119-gdb-scripting-part-1][Gem #119 : GDB Scripting— Part 1 | AdaCore]]
+/Entered on/ [2022-05-27 五 19:19]
+[[https://www.adacore.com/gems/gem-120-gdb-scripting-part-2][Gem #120 : GDB Scripting — Part 2 | AdaCore]]
+/Entered on/ [2022-05-27 五 19:19]
+
+* 知识点分解
+  GDB命令：大类、小类
+      ptype 
+  GDB使用流程
+      b run n s p x
+  GDB原理
+  GDB案例
+
+
+  * get in and out of gdb
+
+* running programs under gdb
+
+* stop and continue
+
+* examining the stack
+
+* examining source files
+  
+* examining data
+
+* examining the symbol table
+
+* alter execution
+
+

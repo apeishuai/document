@@ -1,0 +1,97 @@
+* 安装choco
+
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+
+* MSYS2 <<msys2>>
+
+1 安装MSYS2：
+下载：https://mirrors-wan.geekpie.club/msys2/distrib/i686/（上海科技大学的镜像）
+
+2 更新源
+a、mirrorlist.msys 文件
+##
+## MSYS2 repository mirrorlist
+##
+
+## Primary
+## msys2.org
+## Server = http://repo.msys2.org/msys/$arch
+## Server = http://downloads.sourceforge.net/project/msys2/REPOS/MSYS2/$arch
+## Server = http://www2.futureware.at/~nickoe/msys2-mirror/msys/$arch/
+Server = https://mirrors.tuna.tsinghua.edu.cn/msys2/msys/$arch
+
+b、mirrorlist.mingw32 文件
+##
+## 32-bit Mingw-w64 repository mirrorlist
+##
+
+## Primary
+## msys2.org
+## Server = http://repo.msys2.org/mingw/i686
+## Server = http://downloads.sourceforge.net/project/msys2/REPOS/MINGW/i686
+## Server = http://www2.futureware.at/~nickoe/msys2-mirror/i686/
+Server = https://mirrors.tuna.tsinghua.edu.cn/msys2/mingw/i686
+
+c、mirrorlist.mingw64 文件
+##
+## 64-bit Mingw-w64 repository mirrorlist
+##
+
+## Primary
+## msys2.org
+## Server = http://repo.msys2.org/mingw/x86_64
+## Server = http://downloads.sourceforge.net/project/msys2/REPOS/MINGW/x86_64
+## Server = http://www2.futureware.at/~nickoe/msys2-mirror/x86_64/
+Server = https://mirrors.tuna.tsinghua.edu.cn/msys2/mingw/x86_64
+
+更新Msys2系统环境
+pacman -Sy
+#更新源
+pacman -Syu
+pacman -Su
+
+3 安装常用软件
+安装emacs
+pacman -Ss emacs | pacman -S mingw-w64-x86\_64-emacs
+
+安装git
+安装zsh
+安装vim
+安装gcc g++ make
+
+4 更新配置、配置备份
+
+01 环境变量
+env
+
+.bashrc：export PATH=$PATH:/mingw64/bin/
+MSYS2_PATH_TYPE = inherit  使用windows的环境变量
+
+02 代理
+Q proxychains for windows
+emacs 走代理
+[[https://github.com/shunf4/proxychains-windows/releases][Releases · shunf4/proxychains-windows]]
+/Entered on/ [2022-11-29 周二 15:33]
+
+
+* 常用cmd命令
+
+ping ip
+talent ip prot
+netstat -anp tcp
+ipconfig
+
+
+schtasks
+[[https://codeantenna.com/a/bo1N6TZsOG][windows定时任务 - CodeAntenna]]
+/Entered on/ [2022-11-30 周三 10:50]
+
+内核调试器 windows
+
+
+`
+
+
+
+

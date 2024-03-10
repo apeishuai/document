@@ -1,0 +1,1 @@
+pacman -Rsc 软件名 :

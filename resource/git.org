@@ -1,0 +1,7 @@
+[[https://www.highflux.io/blog/what-makes-git-hard-to-use][What makes Git so hard to use? | HighFlux]]
+/Entered on/ [2023-01-06 周五 12:45]
+
+
+* git配置ssh
+git config --global user.name "apeishuai"
+git config --global user.email "whswhswhs66@gmail.com"

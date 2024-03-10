@@ -1,0 +1,591 @@
+文件夹: \
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+CreateExplorerShellUnelevatedTask        N/A                    就绪           
+JavaUpdateSched                          N/A                    正在运行       
+MicrosoftEdgeUpdateTaskUserS-1-5-21-7495 2022/11/30 12:52:14    就绪           
+MicrosoftEdgeUpdateTaskUserS-1-5-21-7495 2022/11/30 12:22:14    就绪           
+RunAsStdUser Task                        N/A                    就绪           
+Snipaste (Run As Admin) @8A16            N/A                    就绪           
+User_Feed_Synchronization-{D5D17A0A-6BBC 2022/11/30 17:13:54    就绪           
+任务                                     N/A                    就绪           
+
+文件夹: \Agent Activation Runtime
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+S-1-5-21-749517898-2331919519-385872366- N/A                    已禁用         
+
+文件夹: \Microsoft
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+信息: 目前在你的访问级别上不存在任何可用的计划任务。
+
+文件夹: \Microsoft\Office
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Office Automatic Updates 2.0             2022/12/1 7:02:09      就绪           
+Office ClickToRun Service Monitor        2022/12/1 5:08:41      就绪           
+Office Feature Updates                   2022/11/30 17:23:32    就绪           
+Office Feature Updates Logon             N/A                    就绪           
+Office Performance Monitor               N/A                    就绪           
+OfficeTelemetryAgentFallBack2016         N/A                    就绪           
+OfficeTelemetryAgentLogOn2016            N/A                    就绪           
+
+文件夹: \Microsoft\OneCore
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+信息: 目前在你的访问级别上不存在任何可用的计划任务。
+
+文件夹: \Microsoft\Windows
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+信息: 目前在你的访问级别上不存在任何可用的计划任务。
+
+文件夹: \Microsoft\Windows\.NET Framework
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+.NET Framework NGEN v4.0.30319           N/A                    就绪           
+.NET Framework NGEN v4.0.30319 64        N/A                    就绪           
+.NET Framework NGEN v4.0.30319 64 Critic N/A                    已禁用         
+.NET Framework NGEN v4.0.30319 Critical  N/A                    已禁用         
+
+文件夹: \Microsoft\Windows\Active Directory Rights Management Services Client
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+AD RMS Rights Policy Template Management N/A                    已禁用         
+AD RMS Rights Policy Template Management N/A                    就绪           
+
+文件夹: \Microsoft\Windows\AppID
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+PolicyConverter                          N/A                    已禁用         
+SmartScreenSpecific                      N/A                    就绪           
+VerifiedPublisherCertStoreCheck          N/A                    已禁用         
+
+文件夹: \Microsoft\Windows\Application Experience
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Microsoft Compatibility Appraiser        2022/12/1 3:09:40      就绪           
+PcaPatchDbTask                           2022/11/30 16:30:32    就绪           
+ProgramDataUpdater                       N/A                    就绪           
+StartupAppTask                           N/A                    就绪           
+
+文件夹: \Microsoft\Windows\ApplicationData
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+appuriverifierdaily                      N/A                    就绪           
+appuriverifierinstall                    N/A                    就绪           
+CleanupTemporaryState                    N/A                    就绪           
+DsSvcCleanup                             N/A                    就绪           
+
+文件夹: \Microsoft\Windows\AppListBackup
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Backup                                   N/A                    就绪           
+
+文件夹: \Microsoft\Windows\AppxDeploymentClient
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Pre-staged app cleanup                   N/A                    已禁用         
+
+文件夹: \Microsoft\Windows\Autochk
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Proxy                                    N/A                    就绪           
+
+文件夹: \Microsoft\Windows\BitLocker
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+BitLocker Encrypt All Drives             N/A                    就绪           
+BitLocker MDM policy Refresh             N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Bluetooth
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+UninstallDeviceTask                      N/A                    就绪           
+
+文件夹: \Microsoft\Windows\BrokerInfrastructure
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+BgTaskRegistrationMaintenanceTask        N/A                    就绪           
+
+文件夹: \Microsoft\Windows\CertificateServicesClient
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+UserTask                                 N/A                    就绪           
+UserTask-Roam                            N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Chkdsk
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+ProactiveScan                            N/A                    就绪           
+SyspartRepair                            N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Clip
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+LicenseImdsIntegration                   N/A                    已禁用         
+
+文件夹: \Microsoft\Windows\CloudExperienceHost
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+CreateObjectTask                         N/A                    就绪           
+
+文件夹: \Microsoft\Windows\CUAssistant
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+CULauncher                               2022/11/30 13:16:27    就绪           
+
+文件夹: \Microsoft\Windows\Customer Experience Improvement Program
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Consolidator                             2022/11/30 12:00:00    就绪           
+UsbCeip                                  N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Data Integrity Scan
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Data Integrity Check And Scan            2022/11/30 23:26:51    就绪           
+Data Integrity Scan                      N/A                    就绪           
+Data Integrity Scan for Crash Recovery   N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Defrag
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+ScheduledDefrag                          N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Device Information
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Device                                   2022/12/1 3:35:48      就绪           
+Device User                              N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Diagnosis
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+RecommendedTroubleshootingScanner        N/A                    就绪           
+Scheduled                                N/A                    就绪           
+
+文件夹: \Microsoft\Windows\DirectX
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+DirectXDatabaseUpdater                   N/A                    就绪           
+DXGIAdapterCache                         N/A                    就绪           
+
+文件夹: \Microsoft\Windows\DiskCleanup
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+SilentCleanup                            N/A                    就绪           
+
+文件夹: \Microsoft\Windows\DiskDiagnostic
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Microsoft-Windows-DiskDiagnosticDataColl N/A                    已禁用         
+Microsoft-Windows-DiskDiagnosticResolver N/A                    已禁用         
+
+文件夹: \Microsoft\Windows\DiskFootprint
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Diagnostics                              N/A                    就绪           
+StorageSense                             N/A                    就绪           
+
+文件夹: \Microsoft\Windows\DUSM
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+dusmtask                                 N/A                    就绪           
+
+文件夹: \Microsoft\Windows\EDP
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+EDP App Launch Task                      N/A                    就绪           
+EDP Auth Task                            N/A                    就绪           
+EDP Inaccessible Credentials Task        N/A                    就绪           
+StorageCardEncryption Task               N/A                    就绪           
+
+文件夹: \Microsoft\Windows\ErrorDetails
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+EnableErrorDetailsUpdate                 N/A                    就绪           
+ErrorDetailsUpdate                       N/A                    已禁用         
+
+文件夹: \Microsoft\Windows\ExploitGuard
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+ExploitGuard MDM policy Refresh          N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Feedback
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+信息: 目前在你的访问级别上不存在任何可用的计划任务。
+
+文件夹: \Microsoft\Windows\Feedback\Siuf
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+DmClient                                 N/A                    就绪           
+DmClientOnScenarioDownload               N/A                    就绪           
+
+文件夹: \Microsoft\Windows\File Classification Infrastructure
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Property Definition Sync                 N/A                    已禁用         
+
+文件夹: \Microsoft\Windows\FileHistory
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+File History (maintenance mode)          N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Flighting
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+信息: 目前在你的访问级别上不存在任何可用的计划任务。
+
+文件夹: \Microsoft\Windows\Flighting\FeatureConfig
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+ReconcileFeatures                        N/A                    就绪           
+UsageDataFlushing                        N/A                    就绪           
+UsageDataReporting                       N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Flighting\OneSettings
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+RefreshCache                             2022/11/30 19:09:29    就绪           
+
+文件夹: \Microsoft\Windows\Input
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+LocalUserSyncDataAvailable               N/A                    就绪           
+MouseSyncDataAvailable                   N/A                    就绪           
+PenSyncDataAvailable                     N/A                    就绪           
+TouchpadSyncDataAvailable                N/A                    就绪           
+
+文件夹: \Microsoft\Windows\InstallService
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+ScanForUpdates                           2022/12/1 17:05:10     就绪           
+ScanForUpdatesAsUser                     N/A                    就绪           
+WakeUpAndContinueUpdates                 N/A                    已禁用         
+WakeUpAndScanForUpdates                  N/A                    已禁用         
+
+文件夹: \Microsoft\Windows\International
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Synchronize Language Settings            N/A                    就绪           
+
+文件夹: \Microsoft\Windows\LanguageComponentsInstaller
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Installation                             N/A                    就绪           
+ReconcileLanguageResources               N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Live
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+信息: 目前在你的访问级别上不存在任何可用的计划任务。
+
+文件夹: \Microsoft\Windows\Location
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Notifications                            N/A                    就绪           
+WindowsActionDialog                      N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Maintenance
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+WinSAT                                   N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Management
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+信息: 目前在你的访问级别上不存在任何可用的计划任务。
+
+文件夹: \Microsoft\Windows\Management\Autopilot
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+DetectHardwareChange                     N/A                    已禁用         
+RemediateHardwareChange                  N/A                    已禁用         
+
+文件夹: \Microsoft\Windows\Management\Provisioning
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Cellular                                 N/A                    就绪           
+Logon                                    N/A                    就绪           
+Retry                                    N/A                    已禁用         
+RunOnReboot                              N/A                    已禁用         
+
+文件夹: \Microsoft\Windows\Maps
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+MapsToastTask                            N/A                    就绪           
+MapsUpdateTask                           2022/12/1 0:39:16      就绪           
+
+文件夹: \Microsoft\Windows\MemoryDiagnostic
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+ProcessMemoryDiagnosticEvents            N/A                    就绪           
+RunFullMemoryDiagnostic                  N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Mobile Broadband Accounts
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+MNO Metadata Parser                      N/A                    就绪           
+
+文件夹: \Microsoft\Windows\MUI
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+LPRemove                                 N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Multimedia
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+SystemSoundsService                      N/A                    正在运行       
+
+文件夹: \Microsoft\Windows\NetTrace
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+GatherNetworkInfo                        N/A                    就绪           
+
+文件夹: \Microsoft\Windows\NlaSvc
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+WiFiTask                                 N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Offline Files
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Background Synchronization               N/A                    已禁用         
+Logon Synchronization                    N/A                    已禁用         
+
+文件夹: \Microsoft\Windows\PLA
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+信息: 目前在你的访问级别上不存在任何可用的计划任务。
+
+文件夹: \Microsoft\Windows\Plug and Play
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Device Install Group Policy              N/A                    就绪           
+Device Install Reboot Required           N/A                    就绪           
+Plug and Play Cleanup                    N/A                    就绪           
+Sysprep Generalize Drivers               N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Power Efficiency Diagnostics
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+AnalyzeSystem                            N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Printing
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+EduPrintProv                             N/A                    就绪           
+PrinterCleanupTask                       2022/12/16 12:00:00    就绪           
+
+文件夹: \Microsoft\Windows\RecoveryEnvironment
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+VerifyWinRE                              N/A                    已禁用         
+
+文件夹: \Microsoft\Windows\Registry
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+RegIdleBackup                            N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Servicing
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+StartComponentCleanup                    N/A                    就绪           
+
+文件夹: \Microsoft\Windows\SettingSync
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+BackgroundUploadTask                     N/A                    就绪           
+NetworkStateChangeTask                   N/A                    正在运行       
+
+文件夹: \Microsoft\Windows\SharedPC
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Account Cleanup                          N/A                    已禁用         
+
+文件夹: \Microsoft\Windows\Shell
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+CreateObjectTask                         N/A                    就绪           
+FamilySafetyMonitor                      N/A                    就绪           
+FamilySafetyMonitorToastTask             N/A                    已禁用         
+FamilySafetyRefreshTask                  N/A                    就绪           
+IndexerAutomaticMaintenance              N/A                    就绪           
+ThemesSyncedImageDownload                N/A                    就绪           
+
+文件夹: \Microsoft\Windows\SoftwareProtectionPlatform
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+SvcRestartTaskLogon                      N/A                    就绪           
+
+文件夹: \Microsoft\Windows\SpacePort
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+SpaceAgentTask                           N/A                    就绪           
+SpaceManagerTask                         N/A                    就绪           
+
+文件夹: \Microsoft\Windows\StateRepository
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+MaintenanceTasks                         N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Storage Tiers Management
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Storage Tiers Management Initialization  N/A                    就绪           
+Storage Tiers Optimization               N/A                    已禁用         
+
+文件夹: \Microsoft\Windows\Subscription
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+EnableLicenseAcquisition                 N/A                    就绪           
+LicenseAcquisition                       N/A                    已禁用         
+
+文件夹: \Microsoft\Windows\Sysmain
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+HybridDriveCachePrepopulate              N/A                    已禁用         
+HybridDriveCacheRebalance                N/A                    已禁用         
+ResPriStaticDbSync                       N/A                    就绪           
+WsSwapAssessmentTask                     N/A                    就绪           
+
+文件夹: \Microsoft\Windows\SystemRestore
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+SR                                       N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Task Manager
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Interactive                              N/A                    就绪           
+
+文件夹: \Microsoft\Windows\termsrv
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+信息: 目前在你的访问级别上不存在任何可用的计划任务。
+
+文件夹: \Microsoft\Windows\TextServicesFramework
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+MsCtfMonitor                             N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Time Synchronization
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+ForceSynchronizeTime                     N/A                    就绪           
+SynchronizeTime                          N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Time Zone
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+SynchronizeTimeZone                      N/A                    就绪           
+
+文件夹: \Microsoft\Windows\UNP
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+RunUpdateNotificationMgr                 N/A                    已禁用         
+
+文件夹: \Microsoft\Windows\UpdateAssistant
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+UpdateAssistant                          N/A                    已禁用         
+UpdateAssistantAllUsersRun               N/A                    已禁用         
+UpdateAssistantCalendarRun               N/A                    已禁用         
+UpdateAssistantWakeupRun                 N/A                    已禁用         
+
+文件夹: \Microsoft\Windows\UPnP
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+UPnPHostConfig                           N/A                    就绪           
+
+文件夹: \Microsoft\Windows\USB
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Usb-Notifications                        N/A                    就绪           
+
+文件夹: \Microsoft\Windows\WCM
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+WiFiTask                                 N/A                    就绪           
+
+文件夹: \Microsoft\Windows\WDI
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+ResolutionHost                           N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Windows Defender
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Windows Defender Cache Maintenance       N/A                    就绪           
+Windows Defender Cleanup                 N/A                    就绪           
+Windows Defender Scheduled Scan          N/A                    就绪           
+Windows Defender Verification            N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Windows Error Reporting
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+QueueReporting                           2022/11/30 12:05:55    就绪           
+
+文件夹: \Microsoft\Windows\Windows Filtering Platform
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+BfeOnServiceStartTypeChange              N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Windows Media Sharing
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+UpdateLibrary                            N/A                    就绪           
+
+文件夹: \Microsoft\Windows\WindowsColorSystem
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Calibration Loader                       N/A                    就绪           
+
+文件夹: \Microsoft\Windows\WindowsUpdate
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Scheduled Start                          2022/11/30 12:16:44    就绪           
+sih                                      2022/12/1 6:37:51      就绪           
+
+文件夹: \Microsoft\Windows\WindowsUpdate\RUXIM
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+PLUGScheduler                            2022/12/1 8:19:18      就绪           
+
+文件夹: \Microsoft\Windows\Wininet
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+CacheTask                                N/A                    正在运行       
+
+文件夹: \Microsoft\Windows\WlanSvc
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+CDSSync                                  N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Work Folders
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Work Folders Logon Synchronization       N/A                    就绪           
+Work Folders Maintenance Work            N/A                    就绪           
+
+文件夹: \Microsoft\Windows\Workplace Join
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+Automatic-Device-Join                    N/A                    已禁用         
+Device-Sync                              N/A                    已禁用         
+Recovery-Check                           N/A                    已禁用         
+
+文件夹: \Microsoft\Windows\WwanSvc
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+NotificationTask                         N/A                    就绪           
+OobeDiscovery                            N/A                    就绪           
+
+文件夹: \Microsoft\XblGameSave
+任务名                                   下次运行时间           模式           
+======================================== ====================== ===============
+XblGameSaveTask                          N/A                    就绪           
+XblGameSaveTaskLogon                     N/A                    就绪           

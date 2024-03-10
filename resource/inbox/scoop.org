@@ -1,0 +1,33 @@
+卸载：默认在“C:\Users\whens\scoop\"，删除该目录即可
+
+- env:powershell
+> admin
+$env:SCOOP='E:\scoop'
+[environment]::setEnvironmentVariable('USERSCOOP',$env:SCOOP,'User')
+$env:SCOOP_GLOBAL='E:\scoop\globalApps'
+[environment]::setEnvironmentVariable('SCOOP_GLOBAL',$env:SCOOP_GLOBAL,'Machine')
+
+>user
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+iwr -useb get.scoop.sh | iex
+
+>proxy
+scoop install git
+scoop config proxy socks5://127.0.0.1:1081
+scoop config rm proxy
+
+# install apps
+scoop install spc/<app_name>
+scoop bucket add extras
+#scoop bucket add apps https://github.com/kkzzhizhou/scoop-apps
+scoop bucket add dorado https://github.com/h404bi/dorado
+
+>install tools
+scoop install yt-dlp ffmpeg
+miniconda
+
+scoop install 7zip curl sudo git openssh coreutils grep sed gawk less innounp 
+scoop install python ruby go nodejs
+
+
+[[https://www.junmajinlong.com/others/scoop/]]       

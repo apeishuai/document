@@ -1,0 +1,87 @@
+* 网络下载工具
+curl
+wget
+
+
+* 命令行-系统
+/dev
+特殊文件：块特殊文件 字符设备
+硬盘、光盘、usb
+
+lsblk -f
+blockdev
+blkid
+mknod
+
+磁盘
+fdisk -l 分区工具
+parted -l >2G
+
+du
+df -T
+badblocks
+mke2fs
+iotop
+
+
+
+
+分区：
+
+网卡
+[[http://t.zoukankan.com/zhangmingcheng-p-14738490.html][Linux ip link命令 - 走看看]]
+/Entered on/ [2023-01-25 周三 23:43]
+
+
+* service
+a service is essentially a process, running in the background and managed/provisioned by systemd.
+
+$ systemctl
+
+$ systemd
+
+
+
+* QA
+** Q shell的环境变量怎么配置？
+
+
+* other
+哪个shell，对应的哪个配置文件
+
+配置
+
+软件及配置
+
+
+* Shell Programming || DOS || excel || Python(脚本语言)（脚本）  Makefile
+
+autostart：开机启动脚本
+添加脚本到开机自动启动项目中
+chkconfig --add autostart.sh
+chkconfig autostart.sh on
+
+https://tldp.org/LDP/GNU-Linux-Tools-Summary/html/index.html (3 4 5 6 7 8选读 15 19)
+
+https://tldp.org/LDP/abs/html/index.html
+
+[[https://google.github.io/styleguide/shellguide.html][styleguide | Style guides for Google-originated open-source projects]]
+/Entered on/ [2022-04-04 一 11:13]
+
+[[https://effective-shell.com/][Effective Shell | Effective Shell]]
+/Entered on/ [2022-11-20 周日 15:09]
+
+* systemd
+[[https://systemd-by-example.com/][systemd by example - the systemd playground]]
+/Entered on/ [2023-01-06 周五 12:46]
+
+* zsh
+[[https://zsh.sourceforge.io/Doc/Release/Roadmap.html#Roadmap][zsh: 3 Roadmap]]
+/Entered on/ [2022-12-11 周日 13:15]
+
+[[https://scriptingosx.com/2019/06/moving-to-zsh/][Moving to zsh – Scripting OS X]]
+/Entered on/ [2023-01-06 周五 12:45]
+
+
+* Ref
+tldr

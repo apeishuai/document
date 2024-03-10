@@ -1,0 +1,17 @@
+Linux添加开机启动项：
+
+https://wangdoc.com/bash/read.html
+20220915 22:29
+[[https://effective-shell.com/][Effective Shell | Effective Shell]]
+/Entered on/ [2022-12-26 周一 10:57]
+
+
+环境变量
+
+env 
+set
+export
+unset
+
+* 语法
+

@@ -1,0 +1,15 @@
+#gdbscript
+
+set $n = 0
+
+b 6
+commands
+	set $n = $n + 1
+	if $n = 3
+	      printf "product is：%d\n",product
+	else
+	      c
+	end
+end
+
+run 

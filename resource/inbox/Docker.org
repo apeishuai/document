@@ -1,0 +1,92 @@
+docker是一种虚拟化手段，通过重新组织计算机资源，并提供一套管理系统，来达到摆脱具体的计算机硬件的目的
+docker提供一套文件系统，所以其具有原生Linux调用资源的速度
+[[https://hub.docker.com/search?q=][dockerhub]]
+
+
+
+docker [OPTIONS] command
+
+
+<<run>>
+docker run
+    docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+    OPTION
+        -i interactive
+	-t allocate a pseudo-TTY
+	-v bind mount a volume
+	-d detach (run container in background and print container)
+	--rm 
+
+    mine:
+      docker run ubuntu:15.10 /bin/echo "hello world"
+      sudo docker run -itd --rm --name mysql-test -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
+      sudo docker run --rm -ti -v /home/shuai/apeishuai:/nikola dragas/nikola nikola init
+
+docker安装的bash脚本放在了虚拟机
+
+
+* steps
+config: <<build>>
+FROM centos
+RUN yum -y yum install wget \
+    && wget -O redis.tar.gz
+    && tar -xvf redis.tar.gz
+
+cmd:
+docker build -tn nginx:v3
+
+
+
+
+* 本地image构建
+docker build -t your_image_name .
+
+[[https://zhuanlan.zhihu.com/p/34488175][使用 Docker 构建自己的镜像 - 知乎]]
+/Entered on/ [2023-04-24 周一 15:29]
+
+* 容器互访
+[[https://www.cnblogs.com/shenh/p/9714547.html][Docker容器互访三种方式 - 三只松鼠 - 博客园]]
+/Entered on/ [2023-04-24 周一 15:27]
+
+docker network create testnet
+docker network ls
+
+docker run -it --name --network <vridge> --network-alias <><>
+
+
+* 数据保存
+-v <host_path>:<container_path>
+-p <host_port>:<container_port>
+
+sudo docker run --rm -ti -v /yourpath:/nikola dragas/nikola nikola init
+
+sudo docker list
+
+
+
+* 核心流程
+contrainer
+image
+    [[g:/emacs-notes/Tool/inbox/Docker.org::build][build]]
+        通过Dockerfile构建docker镜像
+	Dockerfile 的指令每执行一次都会在 docker 上新建一层。
+    [[g:/emacs-notes/Tool/inbox/Docker.org::run][run]]
+    
+composed
+
+exec
+ps
+build
+pull
+images
+login
+logout
+search
+version
+info
+
+image
+volume
+compose*
+builder
+

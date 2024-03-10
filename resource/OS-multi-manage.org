@@ -1,0 +1,75 @@
+* 计算机架构
+处理器+架构
+
+参考：Wxfs books 11 Hardware
+
+* 系统引导加载管理
+Boot Loader
+
+[[https://wiki.archlinux.org/title/Partitioning_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#MBR%EF%BC%88%E5%BC%95%E5%AF%BC%E4%BB%A3%E7%A0%81%EF%BC%89][Partitioning (简体中文) - ArchWiki]] 分区
+/Entered on/ [2022-11-28 周一 14:12]
+
+[[https://zhuanlan.zhihu.com/p/57176271][用EasyBCD添加WINDOWS启动引导，实现多系统快速切换 - 知乎]]
+/Entered on/ [2022-11-28 周一 11:51]
+
+[[https://wiki.archlinux.org/title/GRUB_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#BIOS_%E7%B3%BB%E7%BB%9F][GRUB (简体中文) - ArchWiki]]
+/Entered on/ [2022-11-28 周一 14:06]
+
+[[https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)][UEFI (简体中文) - ArchWiki]]
+/Entered on/ [2022-11-28 周一 14:10]
+操作系统和固件之间的接口模型
+
+* Internet
+网络测速
+
+* 不同文件系统
+win: linux reader
+
+
+* grub
+pacman os-prober efibootmgr dosfstools grub
+grub or uefi 都会维护一张分区表，操作系统引导找的就是这张表
+
+分区表 MBR gpt
+（硬件）引导项 uefi bios
+（软件）grub：启动引导程序
+
+
+
+*os-grab找不到win引导项*
+[[https://segmentfault.com/a/1190000020850901][grub2 - 聊聊BIOS、UEFI、MBR、GPT、GRUB…… - Tony Output - SegmentFault 思否]]
+/Entered on/ [2023-01-26 周四 23:51]
+
+[[https://zhuanlan.zhihu.com/p/419849594][BIOS/MBR系统无损转UEFI/GPT系统 - 知乎]]
+/Entered on/ [2023-01-27 周五 09:41]
+
+[[https://www.jianshu.com/p/5007e555ec12][Linux与Windows 10用grub引导教程 - 简书]]
+/Entered on/ [2023-01-26 周四 22:04]
+我们打开 /boot/grub/grub.cfg 文件，发现里面确实没有 Windows 10 的启动信息，在后面加上：
+menuentry "Microsoft Windows 10" {
+  insmod part_get
+  insmod fat
+  insmod search_fs_uuid
+  insmod chain
+  search --fs-uuid --set=root $hints_string $fs_uuid
+  chainloader /EFI/Microsoft/Boot/bootmgfw.efi
+}
+
+pacman -S grub
+grub-install --target=i386-pc /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg
+
+grub-install --target=x86_64-efi --efi-directory=<EFI 分区挂载点> --bootloader-id=arch_grub --recheck
+
+
+[[https://zhuanlan.zhihu.com/p/355526135][Windows系统开机引导顺序简述及运维小结 - 知乎]]
+/Entered on/ [2023-01-26 周四 16:46]
+
+
+[核心]保证pacman可用
+
+[[https://wiki.archlinux.org/title/GRUB#Master_Boot_Record_(MBR)_specific_instructions][GRUB - ArchWiki]]
+/Entered on/ [2023-01-26 周四 16:18]
+
+ntfs-3g  :: mount: unknown filesystem type 'ntfs'
+/boot doesn't look like an EFI partition :: 

@@ -1,0 +1,364 @@
+* RSS
+[[https://www.maxieewong.com/Maxiee%20%E7%9A%84%20Emacs%20%E4%B9%8B%E6%97%85%EF%BC%9ARSS%20%E9%98%85%E8%AF%BB%E5%99%A8.html][fleed rss]]
+[[https://maxieewong.com/Maxiee%20%E7%9A%84%20Emacs%20%E4%B9%8B%E6%97%85%EF%BC%9ARSS%20%E9%98%85%E8%AF%BB%E5%99%A8.html][Maxiee 的 Emacs 之旅：RSS 阅读器 - Maxiee Blog]]
+/Entered on/ [2022-11-29 周二 10:51]
+[[http://blog.lujun9972.win/emacs-document/blog/2016/09/06/%E5%9C%A8emacs%E4%B8%AD%E7%94%A8elfeed%E9%98%85%E8%AF%BB%E4%BD%A0%E7%9A%84rss-feeds/index.html][在Emacs中用elfeed阅读你的RSS-feeds - EMACS-DOCUMENT]]
+/Entered on/ [2022-11-29 周二 17:15]
+[[https://nullprogram.com/blog/2015/12/03/][9 Elfeed Features You Might Not Know]]
+/Entered on/ [2022-11-30 周三 22:19]
+[[https://koustuvsinha.com/post/emacs_research_workflow/][A workflow xx ML rearch papers with Emacs]]
+/Entered on/ [2022-11-30 周三 22:19]
+
+<2022-11-29 周二 16:29>测试，elfeed能正常抓取信息
+配置代理，能正常抓取信息。怎么测试订阅源有效呢
+<2023-01-25 周三 11:22>在打开entry的瞬间，用电量会显示非常大，电源非常热，为什么呢？但是性能较好的电脑依然可以正常显示rss，没问题的
+
+
+* other
+GTD: tool efficiency environment
+
+如何测量函数的运行时间
+#+BEGIN_SRC emacs-lisp
+(benchmark-elapse (sleep-for 2) (message "Hello!"))
+#+END_SRC
+
+* Now Emacs功能列表
+   1 GTD（基于org-mode，emacs本身）+ OKR 
+   
+   2 find-file and search-text(command: grep and find)
+   windows（GUNwin）：https://gnuwin32.sourceforge.net/packages.html
+   linux shell command 具有稳定性
+   （解析中文有点问题，是一个依赖的问题吗）
+   <2023-01-25 周三 11:16>
+   关键词放一份中文拼音缩写就行了+GTD 就很完美
+
+   3 org-protocol capture bookmark:
+   [[http://tech.memoryimprintstudio.com/org-capture-from-external-applications/][Org Capture from External Applications – Emacs, Arduino, Raspberry Pi, Linux and Programming etc]]
+   /Entered on/ [2022-10-31 一 14:41]
+   
+   [[https://zhuanlan.zhihu.com/p/58215837][在 Firefox 上使用 Org 协议捕获 URL - 知乎]]
+   /Entered on/ [2022-11-10 周四 20:53]
+   
+   [[https://orgmode.org/worg/org-contrib/org-protocol.html][org-protocol.el – Intercept calls from emacsclient to trigger custom actions]]
+   /Entered on/ [2023-01-25 周三 11:27]
+
+   [[https://zhuanlan.zhihu.com/p/58215837][在 Firefox 上使用 Org 协议捕获 URL - 知乎]]
+   /Entered on/ [2023-01-25 周三 11:28]
+
+   <2022-11-08 周二 22:26>
+   作用机理：emacs打开时会打开server服务
+   javascript调用protcol服务与server通讯，按照模板弹出一个frame，C-c C-c弹窗消失
+   windows下为什么成功不了呢?
+   <2022-11-10 周四 20:54>
+   好吧，是javascript的问题，不管了
+   <2023-01-25 周三 10:37>
+   迁移尝试了一下，就是个索引文件的问题，需要注册表和环境变量配合
+  [[file:images/2023-01-25_11-18-22.png][Capture-2023-01-25_11-18-22.png]] 注册表
+  [[file:images/2023-01-25_11-19-03.png][Capture-2023-01-25_11-19-03.png]] 环境变量
+
+   4 screenshot
+   win: snipaste etc
+   linux: gnome-screenshot
+   <2023-01-25 周三 10:43> 重新测试
+   msys需要引入windows的环境变量
+   [[file:images/2023-01-25_11-19-22.png][Capture-2023-01-25_11-19-22.png]] 环境变量
+
+
+   5 记账系统
+   ledger 只要有数据文件，因为其是一个单命令行程序，哪个系统都行
+
+   6 rss read (finished)
+
+   6 写博客 nikola
+
+   7 Latex
+   C-c C-x C-l org-mode下显示latex
+
+   8 Elpa package management:
+
+   9 写代码
+   etags: https://blog.csdn.net/Emacx/article/details/6067415
+
+
+
+* 实际需求
+  环境变量  M-x getenv
+
+  
+* Emacs help system
+apropos-command show all commands that match a given pattern
+
+   Info Manual: C-h i
+   Apropos: variable key C-h a
+   Describe system: C-h m
+
+ You have typed C-h, the help character
+ t           Start the Emacs learn-by-doing tutorial.
+ C-a         Information about Emacs.
+ i           Start the Info documentation reader: read included manuals.
+ e           Go to the *Messages* buffer which logs echo-area messages.
+ f FUNCTION  Display documentation for the given function.
+ F COMMAND   Show the Emacs manual’s section that describes the command.
+ C-f         Emacs FAQ.
+
+ C-h m runs the command describe-mode (found in global-map), which is
+ an interactive compiled Lisp function in ‘help.el’.
+ It is bound to C-h m, <f1> m, <help> m, <menu-bar> <help-menu>
+ <describe> <describe-mode>.
+ (describe-mode &optional BUFFER)
+
+ documentation of current major mode and minor modes.
+ A brief summary of the minor modes comes first, followed by the
+ major mode description.  This is followed by detailed
+ descriptions of the minor modes, each on a separate page.e
+ 
+* Emacs 结构
+frame buffer mode
+key-board
+
+buffer displayed in a window
+Buffer: the buffer is the data structure
+all files are buffers:talk to another process I/O
+minibuffer  Terminal emacs session
+Mode
+Dired-mode : mode for "editing" directory listing   : Ctrl+h dired
+
+环境变量:
+
+Most major modes run one or more mode hooks as the last step of initialization. Mode hooks are a convenient way to customize the behavior of individual modes; they are always normal. For example, here’s how to set up a hook to turn on Auto Fill mode in Text mode and other modes based on Text mode: 
+
+A lambda expression, by itself, has no name; it is an anonymous function.
+
+
+* Log
+<2021-01-14 四 00:44>
+我现在觉得emacs就是一堆函数和一堆变量组成的，除了这些，还有elisp语法，如add-to-list，setq，car cdr cons
+和scheme类似，基本的数据结构只有一种：列表，剩下的就是对列表的各种操作，语法糖
+
+<2021-05-01 六 14:02>emacs使用emacs lisp，函数式编程  《若为自由故》
+
+<2021-01-21 四 19:04>
+基础：变量 函数 运算符  正则表达式 布尔运算  
+setq defun 
+if when cond while let*  message dolist  mapcar
+
+<2021-05-01 六 13:58>重回命令行
+
+<2021-06-30 三 18:02>org+nikola 
+[[~/shuai-files/Reference/Agenda View.org][Agenda View]]
+
+<2021-10-17 日 13:47>这次是真的重回命令行
+
+<2022-11-18 周五 23:11>
+emacs占用了我太多时间，后面花时间完善工作流后就不管了
+
+
+* Ref
+http://ergoemacs.org/index.html
+https://github.com/empenguinxh/emacs-tutorial-in-chinese/blob/master/start_from_0_emacs_tutorial_2015.md
+https://space.bilibili.com/210738994/channel/detail?cid=125953
+https://www.bilibili.com/video/BV1MW411i72D
+https://github.com/emacs-tw/emacs-101-beginner-survival-guide
+
+[[~/shuai-files/book-notes/MasterEmacs.org][book mastering emacs]]
+
+[[https://github.com/mgmart/capture][mgmart/capture: emacs org-mode protocol handler for macOS]]
+/Entered on/ [2022-11-14 周一 11:24]
+
+[[chrome-distiller://c036243e-b18b-42c7-afdc-da7bfea2dcd8_7ebe6d04a0849cf69e10bac71cb8570124ba89d11dba0540bb1a3eb3f16f8f6b/?title=Emacs+%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C&time=12006525&url=https%3A%2F%2Fmanateelazycat.github.io%2Femacs%2F2022%2F11%2F18%2Fwrite-emacs-plugin.html][Emacs 插件开发手册 - 阅读器模式]]
+/Entered on/ [2022-11-18 周五 23:10]
+
+[[https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html][Top (GNU Emacs Lisp Reference Manual)]]
+/Entered on/ [2022-11-18 周五 23:10]
+powershell 权限
+https://www.jianshu.com/p/4eaad2163567
+image screenshot emacs
+https://www.reddit.com/r/emacs/comments/jczcv0/paste_an_image_into_an_org_file_windows/
+
+[[https://www.bilibili.com/video/BV13g4y167Zn?p=51&spm_id_from=pageDriver][Emacs高手修炼手册]]
+/Entered on/ [2022-02-09 三 00:40]
+
+[[https://github.com/ginqi7/dictionary-overlay][ginqi7/dictionary-overlay: dictionary-overlay]]
+/Entered on/ [2022-11-17 周四 18:00]
+
+
+* 其他
+
+C-x C-e
+^eval-expression
+^eval-buffer
+
+(setq a 111) (setq b "abc") ;; 
+(defun hello (a)) ;;  
+(message "")
+(interactive)
+
++ - * /       string: concat substring 
+
+list  (setq mylist '("a" "b" 1 2))   car cdr cons()
+
+statement:  (if) (cond) (while)  (or/and) (dolist) (let*) (mapcar)
+(shell-command-to-string "echo hello")
+
+M-x (helm-M-x)  M-! (shell-command) 
+
+定位emacs命令
+C-h k C-x C-f
+C-h a (查找需要的命令)
+
+
+   M-x eval-buffer
+   M-x eval-region
+   M-x eval-expression
+   C-x C-e
+   (global-set-key keysequence command)
+
+   假如我清除了某些函数，好像这个函数的索引存在，对执行有影响
+
+   
+** 包管理
+1 elpa包管理
+配置melpa吃尽了苦头，我决定用科学上网，这样一来就没那么多破事
+改变变量就可以，真的是
+2 command package-list
+(use-package) 管理包
+M-x list-packages    打开包列表
+
+基于dired
+•【Enter ↵】 显示包相关帮助
+•【i】  标记为要安装
+•【u】取消安装或卸载标记
+•【d】 标记为要卸载
+•【x】 执行安装或卸载
+•【r】  刷新列表
+•【f】  输入关键字过滤列表，按q恢复完整列表
+
+3 非1 2包管理：
+
+
+load-path
+export EMACSLOADPATH=/home/foo/.emacs.d/lisp:
+
+
+[[https://zhuanlan.zhihu.com/p/80184476][pdf阅读器--Zethu]]
+eww 输入url地址
+
+[[https://www.itdaan.com/blog/2014/10/22/40eb801695d23b57da87c194f2b8fa3c.html][emacs做思维导图]]
+[[https://graphviz.gitlab.io/doc/info/lang.html][graphviz reference dot language]]
+https://graphviz.gitlab.io/pdf/dotguide.pdf
+[[http://www.graphviz.org/doc/info/attrs.html][refrerence attrs]]
+[[https://www.cnblogs.com/chenfanyu/archive/2013/01/27/2878845.html#sec-3-1][使用 emacs org-mode 画图 - chenfanyu - 博客园]]
+/Entered on/ [2022-02-08 二 17:25]
+
+
+1 写完一个buffer，M-x eval-buffer ，buffer就会更新；eval-expression可以测试写的函数（这是测试elisp的方法）
+2 Ctrl+h  最常用组合键  一般查询 f（function） v（variable） k（keybinding） P（package）
+
+具体得根据你的emacs配置，如果没有就自己配置。我用的Spacemacs，C-c . 插入日期，C-u C-c . 插入日期+时间
+Ctrl+g  Ctrl+_ 撤销撤销    Ctrl+_ 撤销
+
+
+** org-mode
+each entry has a heading line that starts with one or more ‘*’ characters. 
+any line that begins with the ‘#’ character is treated as a comment.
+
+
+嵌入代码块：#+BEGIN_SRC
+
+[[http://www.360doc.com/content/14/1219/13/20545288_434126794.shtml][org-mode]]
+[[https://www.cnblogs.com/yangwen0228/p/6287455.html][插入图片 org-mode]]
+[[https://www.xuebuyuan.com/217288.html][图片自动显示 org-mode]]
+
+<2021-05-12 三 20:41>
+文件操作：
+d x yes
+Ctrl+x  Ctrl+q
+
+字体操作： *粗体*  /斜体/
+
+链接：
+内部链接（锚点）
+<<happy>>   [happy]]
+注：数字不顶用，中文可能也不顶用
+查找过程：关键词，没有解决；看原文档，没有解决；再次查找，解决（二手信息），效率不高(需要做优化)
+
+C-c l   保存至buffer中
+C-c C-l 插入链接
+C-c C-o 打开链接
+C-c %  记忆位置
+C-c &  从%的记录中回溯
+
+
+** GTD系统
+[[https://blog.jethro.dev/posts/capturing_inbox/][01 jethro workflow]]
+[[https://github.com/rougier/emacs-gtd][02 rougier workflow]]
+4.4.1 规划时间
+~~~~~~~~~~~~~~~
+   * C-c C-s 规划日程
+   * C-c C-s 设置期限
+
+4.4.2 记录时间
+~~~~~~~~~~~~~~~
+   * C-c C-x c-i 开始计时
+   * C-c C-x C-o 结束计时
+   * C-c C-x C-x 取消计时
+
+4.4.3 分析时间
+~~~~~~~~~~~~~~~
+   * C-c C-x C-r 创建今日的时间统计表格
+   * C-c a agenda view
+     * R 创建时间统计表格
+
+4.5 导出
+=========
+  * C-c C-e
+    
+** Latex环境配置
+Linux安装Latex：
+1 sudo apt-get install textlive-full
+[[https://max.book118.com/html/2018/0103/147043242.shtm][emacs配置latex]]
+<2021-09-16 四 23:25>经过排查发现，latex-mode的配置有一部分并没起作用，要真的吃透emacs，不然这样的问题还会发生
+
+(pushnew! initial-frame-alist '(width . 200) '(height . 55))
+(add-hook 'window-setup-hook #'toggle-frame-maximized)
+(add-hook 'window-setup-hook #'toggle-frame-fullscreen)
+第一行是调整窗口大小，第二行是最大化，第三行是全屏。根据需要选择，放在config.el里就行。
+
+Language Server Protocol
+
+http://ergoemacs.org/emacs/emacs_alias.html
+find-my-files plugin 
+
+Ctrl h i
+
+$PATH  $HOME
+
+auto-mode-alist ：when file open, it use related mode
+
+major mode setting   minor mode setting
+different buffer has different function 
+*Message* show what your emacs changed
+*scratch* write your thoughts conveniently
+
+
+mbsync  mpop
+isync is a command-line application that synchronizes mailboxes
+isync is a project name, mbsync is the current executable name
+
+1 mu download
+mu is a index/search tool for searching email.
+mu is a tool for dealing with e-mail messages stored un the Maildir-format,or Unix-like system
+
+2 mu4e download
+mu4e is an email client for Emacs. it`s based on the mu email indexer/searcher
+
+3 offlineimap
+offline is a python tility to sync from IMAP servers. it does not work with the POP3 protocol or mbox, and is usually paired with a MUA such as Mutt
+
+4 mbsync mpop
+sync emails between remote email server and a local folder on computer
+
+Kail安装racekt-mode：
+racket-mode 配置“tab”自动补全 配置快捷键
+
+
