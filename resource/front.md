@@ -42,7 +42,7 @@ name="description" content="the docs is a test for xxx"
 ```
 ```html
 <link href="main.css" rel="stylesheet" /> 链接外部样式表
-
+rel="icon/stylesheet" //指定当前文档与被链接文档之间的关系
 ```
 ```html
 <p>段落</p> 
@@ -104,85 +104,31 @@ content</a>
 ## 多媒体
 
 # css
-### 布局
-   - 学习盒模型，包括内容区域、内边距、边框和外边距。
-   - 掌握常用的布局方法，如浮动、定位、Flexbox和Grid布局。:wq
-
-
-3. **响应式设计**：
-   - 学习响应式设计的原理和方法。
-   - 掌握媒体查询和视口单位的使用。
-
-### 中级阶段：
-4. **CSS预处理器**：
-   - 学习使用CSS预处理器，如Sass、Less或Stylus，提高CSS的可维护性。
-   - 掌握变量、嵌套、Mixin等概念。
-
-5. **模块化CSS**：
-   - 学习模块化的CSS方法，如BEM、OOCSS、SMACSS等。
-   - 掌握组件化开发的思想，提高代码的复用性和可维护性。
-
-6. **性能优化**：
-   - 学习CSS性能优化的方法，包括减少HTTP请求、压缩代码、减少选择器嵌套等。
-   - 掌握提高页面加载速度的技巧。
-
-### 高级阶段：
-7. **动画和过渡**：
-   - 学习使用CSS实现动画和过渡效果。
-   - 掌握关键帧动画、动画属性和过渡属性的使用。
-
-8. **CSS框架**：
-   - 学习使用现有的CSS框架，如Bootstrap、Foundation等。
-   - 掌握框架的使用方法和定制化。
-
-9. **现代CSS**：
-   - 学习新的CSS特性和规范，如CSS变量、自定义属性、网格布局等。
-   - 掌握未来CSS的发展方向和趋势。
-
-### 大师阶段：
-10. **创新和实践**：
-    - 探索CSS的创新应用，如3D动画、变形效果等。
-    - 参与开源项目或社区，分享经验和知识。
-
-11. **深入研究**：
-    - 深入研究CSS规范和标准，了解其内部原理和设计思想。
-    - 参与标准制定或贡献代码。
-
-12. **教学和分享**：
-    - 成为CSS领域的专家，撰写博客、教程或出版书籍。
-    - 在行业会议或讲座上分享经验和见解。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # javascript
+## 核心概念
+代码风格\
+内存管理\
+变量生命周期\
+
+```html
+data type:
+primitive: number、bigint、string、boolean、null、undefined、symbol
+object(complex data):
+
+type conversion:
+value = string(xxx) //强制转换
+
+interaction:\
+alert("hello");
+prompt(title,[default]);
+confirm(question);
+```
+
+## xxx
+
+
+
 
 
 # ref
 MDN;\
-pink前端 黑马

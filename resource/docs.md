@@ -10,8 +10,7 @@ docsify init docs //初始化 \
 README为首页展示文件，index.html中编写配置项(需熟悉html、css、javascript) 
 
 # 部署
-docsify serve docs  -p 4000 //打开服务器 
-
+docsify serve docs -p 4000 //打开服务器 
 
 # ref
 https://angry-swanson-b4e47b.netlify.app/zh-cn/configuration

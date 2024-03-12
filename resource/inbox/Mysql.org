@@ -1,14 +1,10 @@
 Linux Mysql安装
 Linux MySQL：安装mysql
 
-
 * centos7
 download and install mysql
 
-
-
-
-* 123
+* ref
 [[https://www.bilibili.com/video/BV1Nb411e7YF?from=search&seid=12646141100636457968&spm_id_from=333.337.0.0][千锋Linux MySQL DBA]]
 /Entered on/ [2022-02-07 一 13:53]
 [[http://xuesql.cn/][自学SQL网(教程 视频 练习全套)]]
@@ -20,7 +16,6 @@ download and install mysql
 
 * sqlite <<sqlite>> windows
 pacman -Ss sqlite
-
 
 operate:
 sqlite3 testDB.db   (create a new database)
@@ -53,20 +48,11 @@ update table_name
 [[https://www.runoob.com/sqlite/sqlite-attach-database.html][SQLite 附加数据库 | 菜鸟教程]]
 /Entered on/ [2022-11-26 周六 16:04]
 
-
-
-
-
 * 数据库基本操作
-
-
 
 * 基本构成
 Table ： row column
 select * from table
-
-
-
 
 * 自学SQL网
 [[g:/emacs-notes/Reference/《mysql必知必会》.org][《Mysql必知必会》]]
