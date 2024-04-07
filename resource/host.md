@@ -2,7 +2,6 @@
 # 选择操作系统
 debian (ref:linux.md)
 
-
 # 初始化配置
 ssh登录
 ```
@@ -13,8 +12,20 @@ ssh登录
 4 vim /etc/ssh/sshd_config
 	开放
 	service sshd restart
-```
 
+//简化版本
+ssh-keygen -t rsa -f ~/.ssh/ucloud_shuai
+ssh-copy-id user@remotehost
+ssh user@remotehost
+
+比如root就新建一个ucloud_root密钥，shuai就新建一个ucloud_shuai密钥
+修改配置文件~/.ssh/config
+Host ucloud_root
+	HostName 132.43.143.434(修改过的)
+	User root
+	Port 22
+	IdentityFile ~/.ssh/ucloud_root
+```
 
 # 操作系统配置
 查看硬件信息
@@ -33,10 +44,9 @@ ifconfig
 /proc/partitions
 /proc/net
 ```
-
-
 # 现状分析
-
+## 负载
+## 请求量
 ## service
 ```service normal
 systemctl list-units --type=service //列出所有服务

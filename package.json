@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "docsify": "^4.13.1"
+    "docsify": "^4.13.1",
+    "markmap-cli": "^0.16.2"
   }
 }

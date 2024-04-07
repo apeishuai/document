@@ -39,3 +39,46 @@ class为基础，核心是设计模式，即通过类的继承、组合解耦合
 # 项目构建
 文件操作(excel、word、etc)、各种库的使用、网络编程、服务器后端、写脚本、etc
 (具体的业务逻辑及相关模型，等遇到实际项目再细化)
+
+
+
+# 代码片段
+生成临时文件
+```python
+import subprocess
+import tempfile
+
+grep_command = ['grep', '//$', 'tmp_urls.txt']
+awk_command = ['awk', '-i','inplace','{sub(/\/\/$/, \"/\")}1', 'tmp_urls.txt']
+
+grep_rlt = subprocess.run(grep_command, capture_output=True, text=True)
+file_list = grep_rlt.stdout.splitlines()
+
+for file in file_list:
+    subprocess.run(awk_command,text=True)
+
+
+'''
+with tempfile.NamedTemporaryFile(mode='w', delete=False) as tmp_grep:
+    subprocess.run(grep_command, stdout=tmp_grep, text=True)
+
+    with tempfile.NamedTemporaryFile(mode='w', delete=False) as tmp_awk:
+        subprocess.run(awk_command, stdout=tmp_awk, text=True)
+        
+        tmp_file = tmp_awk.name
+
+        with open(tmp_file, 'r') as tmp_awk_read:
+            file_content = tmp_awk_read.read()
+            print("awk 临时文件内容:")
+            print(file_content)
+
+
+
+    tmp_grep_file = tmp_grep.name
+    with open(tmp_grep_file, 'r') as tmp_file_read:
+        file_content = tmp_file_read.read()
+        print("grep 临时文件内容:")
+        print(file_content)
+        '''
+
+```	
