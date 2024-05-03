@@ -104,30 +104,6 @@ content</a>
 ## 多媒体
 
 # css
-# javascript
-## 核心概念
-代码风格\
-内存管理\
-变量生命周期\
-
-```html
-data type:
-primitive: number、bigint、string、boolean、null、undefined、symbol
-object(complex data):
-
-type conversion:
-value = string(xxx) //强制转换
-
-interaction:\
-alert("hello");
-prompt(title,[default]);
-confirm(question);
-```
-
-## xxx
-
-
-
 
 
 # ref

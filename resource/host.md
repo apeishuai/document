@@ -53,7 +53,11 @@ systemctl list-units --type=service //列出所有服务
 systemctl start/stop/restart/status enable/disable <service>
 ```
 
-```service nginx
+sudo netstat -tunlp | grep {port}
+
+
+### nginx
+```
 查看Nginx配置文件路径：
 nginx -t
 nginx -v
@@ -67,7 +71,8 @@ sudo systemctl status nginx
 sudo systemctl enable/disable nginx
 ```
 
-```service mysql
+### mysql
+```
 配置文件位置：
 mysql --help | grep "my.cnf"
 sudo find / -name "my.cnf" -type f

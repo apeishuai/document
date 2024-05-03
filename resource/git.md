@@ -49,6 +49,7 @@ git -T ssh@github.com //测试是否连通
 	 + git reset --soft HEAD~
 	 + git reset --mixed HEAD~
 	 + git reset --hard HEAD~
+   + git reflog (本地操作历史记录)
 
 # git协作
 + git branch（创建新分支）

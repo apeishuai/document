@@ -20,11 +20,11 @@
 属于文件作用域，缺省状态下为external链接属性
 static将external改为internal
 
-静态变量：默认为0
-自动变量：随机
-	堆：手动管理
-	栈：自动管理
-函数d在缺省情况下具有external链接属性
++ 静态变量：默认为0
++ 自动变量：随机
+  + 堆：手动管理
+  + 栈：自动管理
++ 函数在缺省情况下具有external链接属性
 
 ```c
 #include <stdio.h>
@@ -87,56 +87,8 @@ int main(){
 
 	return 0;
 }
-
-
 ```
-测试结构体
-```c
-typedef struct tag{ 
-	struct tag *next;
-	int xxx;
- }var_list;
-```
-```c
-#include <stdio.h>
-#include <stdlib.h>
 
-#define LENGTH 200
-
-typedef struct tag{
-	struct tag *abc;
-	int x;
-	int y;
-}var_struct;
-
-void test_var_struct(){
-	var_struct *pos = (var_struct *)malloc(sizeof(var_struct));
-	pos->x = 100;
-	pos->y = 200;
-
-	printf("the coordiate of man is: \nx:%d\ny:%d\n",pos->x,pos->y);
-}
-
-typedef struct link_tag{
-	struct link_tag *next;
-	int data;
-}link;
-
-
-void test_link(link *ptr){
-	link *ptr = (link *)malloc(LENGTH * sizeof(link));
-	ptr->data = 200;
-	ptr->next = NULL;
-}
-
-
-int main(){
-	//test_var_struct();
-
-	return 0;
-}
-
-```
 ### 函数
 ```c
 return_type func_name(parameter list)
@@ -231,10 +183,10 @@ int main(){
 }
 ```
 
-### 字符串
 
 ### 其他
 间接访问\
+```c
 *\
 []:访问数组型元素\
 除了优先级外，下标引用和间接访问完全相同\
@@ -247,13 +199,87 @@ string.h\
 memcpy() memmove() memset() memcmp()\
 
 date: 2023-12-11 09:55:30
-
+```
 
 # 数据结构
 写顺序表遇到如下卡点：
 + c基础不到位(结构体、指针怎么使用，涉及到很多细节，补充c基础内容)
 + 功能层面：函数是否完备，仅需要内存管理、增删改查就够了吗?
 + 性能层面：想不到具体场景，日后完善
+
+## 基础数据类型
+| 类型名称   | 类型关键字 | 占字节数 | 其他叫法 | 表示的数据范围     |
+|------------|------------|----------|----------|---------------------|
+| 整型       | int        | 4字节    |          | -2,147,483,648 ~ 2,147,483,647 |
+| 短整型     | short      | 2字节    |          | -32,768 ~ 32,767             |
+| 长整型     | long       | 4字节或8字节 |        | 根据系统32位或64位              |
+| 无符号整型 | unsigned int | 4字节   |          | 0 ~ 4,294,967,295            |
+| 字符型     | char       | 1字节    |          | -128 ~ 127                   |
+| 单精度浮点型 | float     | 4字节    |          | 约 -3.4E+38 ~ 3.4E+38         |
+| 双精度浮点型 | double    | 8字节    |          | 约 -1.7E+308 ~ 1.7E+308       |
+| 布尔型     | bool       | 1字节    |          | true 或 false                |
+
+
+## 复合数据类型
+### 数组
+```c
+<type> array_name [<constant expression>]
+```
+声明一个数组时，编译器将根据声明所指定的元素数量为数组保留内存空间，然后再创建数组名，它的值是一个常量，指向这段空间的起始位置
+
+当一个数组作为参数传递给一个函数时，此时传递给函数的是一份该指针的拷贝，函数如果执行了下标引用，实际上是对这个指针的间接访问操作
+
+存储于静态内存的数组只初始化一次
+
+动态数组则需要使用malloc自己申请(这样我直接用指针不行了么)
+
+### 结构体
+```c
+typedef struct tag{ 
+	struct tag *next;
+	int xxx;
+ }var_list;
+```
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+#define LENGTH 200
+
+typedef struct tag{
+	struct tag *abc;
+	int x;
+	int y;
+}var_struct;
+
+void test_var_struct(){
+	var_struct *pos = (var_struct *)malloc(sizeof(var_struct));
+	pos->x = 100;
+	pos->y = 200;
+
+	printf("the coordiate of man is: \nx:%d\ny:%d\n",pos->x,pos->y);
+}
+
+typedef struct link_tag{
+	struct link_tag *next;
+	int data;
+}link;
+
+
+void test_link(link *ptr){
+	link *ptr = (link *)malloc(LENGTH * sizeof(link));
+	ptr->data = 200;
+	ptr->next = NULL;
+}
+
+
+int main(){
+	//test_var_struct();
+
+	return 0;
+}
+```
+
 
 ## Seq.h
 ```c
@@ -857,6 +883,12 @@ int main()
 
 ```
 
+# 库文件
+## uthash.h
+c语言没有提供哈希表，借用该库实现
+
+
+
 # 算法
 >算法设计是计算机科学中非常重要的一个领域，涵盖了许多不同的算法设计技术和方法。以下是一些常见的算法设计内容：
 
@@ -891,6 +923,8 @@ int main()
 ## 搜索
 ## 递归
 ## 动态规划
+
+
 
 
 

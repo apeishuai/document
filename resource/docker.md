@@ -3,6 +3,10 @@ docker提供一套文件系统，所以其具有原生Linux调用资源的速度
 [[https://hub.docker.com/search?q=][dockerhub]]
 
 
+# 安装
+curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
+curl -sSL https://get.daocloud.io/docker | sh
+
 # 架构
 
 
