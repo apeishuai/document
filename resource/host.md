@@ -1,9 +1,21 @@
 # 硬件采购
+
+
 # 选择操作系统
 debian (ref:linux.md)
 
+# 配置内核
+```
+1 uname -a
+uname [OPTION]...
+Print certain system infomation. with no OPTION, same as -s
+
+
+2 cat /proc/version
+```
+
 # 初始化配置
-ssh登录
+## ssh登录
 ```
 1 本地生成的id_rsa.pub内容复制到~/.ssh/authorized_keys
 2 vim ~/.ssh/config
@@ -15,7 +27,7 @@ ssh登录
 
 //简化版本
 ssh-keygen -t rsa -f ~/.ssh/ucloud_shuai
-ssh-copy-id user@remotehost
+ssh-copy-id -i ~/.ssh/ucloud_ubuntu user@remotehost
 ssh user@remotehost
 
 比如root就新建一个ucloud_root密钥，shuai就新建一个ucloud_shuai密钥
@@ -25,6 +37,9 @@ Host ucloud_root
 	User root
 	Port 22
 	IdentityFile ~/.ssh/ucloud_root
+
+
+pwsswd直接修改用户密码
 ```
 
 # 操作系统配置
@@ -44,6 +59,12 @@ ifconfig
 /proc/partitions
 /proc/net
 ```
+# 数据、服务迁移
+数据备份特别麻烦，所以服务器在身边比较好
+
+# 生产环境
+# CI/CD服务
+
 # 现状分析
 ## 负载
 ## 请求量
@@ -234,4 +255,5 @@ scp -r root@117.123.89.99:/home/shuai ~
 主机故障！！！
 
 ssh连不上
+防火墙问题
 

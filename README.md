@@ -3,7 +3,6 @@
 ## [前端](resource/front.md)
 ## [Linux](resource/linux.md)
 
-xx
 # 编程语言
 语言学习路径:
 
@@ -35,6 +34,7 @@ xx
 ## [C#](resource/C#.md)
 ## [Java](resource/Java.md)
 ## [emacs-lisp](resource/emacs-lisp.md)
+## [node.js](resource/nodejs.md)
 
 
 # 服务

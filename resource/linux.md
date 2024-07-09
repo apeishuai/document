@@ -874,7 +874,7 @@ tshark -i eth0 -f "ip.src == 192.168.1.100 and tcp.port == 80"
 
 
 # 用户管理
-```原理
+```相关文件
 /etc/passwdS\
 root:x:0:0::/root:/bin/bash\
 name: :user id:gid:directory:bash\
@@ -893,8 +893,9 @@ root:::root\
 user:pass(!xx表示无法登入):group account:群组所属账号
 
 /home/username
+```
 
-命令：\
+```操作命令
 groupadd\
 groupmod\
 groupdel\
@@ -904,8 +905,9 @@ newgrp users: 切换有效群组(决定新创建文件归属)\
 exit: 离开新的有效群组
 
 groups:查看账号属于的群组(第一个为有效群组)
-
-useradd:\
+```
+```指令执行后相关文件改动
+useradd:(相关文件改动)\
 ref: \
 /etc/default/useradd\
 /etc/login.defs\
