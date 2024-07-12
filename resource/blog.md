@@ -132,16 +132,16 @@ hugo server -w
 - [ssh添加公钥](https://blog.csdn.net/fenghuibian/article/details/73350890)
 - 创建github workflow\
 新建/site/.github/workflows/hugo-deploy.yml文件，内容如下：
+
+token生成参考：[利用GitHub Action实现Hugo博客在GitHub Pages自动部署](https://lucumt.info/post/hugo/using-github-action-to-auto-build-deploy/)
 ```c
 name: deploy
-
 on:
     push:
     workflow_dispatch:
     schedule:
         # Runs everyday at 8:00 AM
         - cron: "0 0 * * *"
-
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -172,7 +172,9 @@ jobs:
                   commit_message: ${{ github.event.head_commit.message }}
 
 ```
-token生成参考：[利用GitHub Action实现Hugo博客在GitHub Pages自动部署](https://lucumt.info/post/hugo/using-github-action-to-auto-build-deploy/)
+
+
+
 - 推送至仓库
 ```c
 git init
@@ -182,23 +184,28 @@ git add .
 git commit -m "my first blog"
 git push origin master
 ```
-- 创建仓库(子站点)
+- 创建仓库(子站点)\
 创建新项目(例docs)，推送至gh-pages分支上，就能通过'username.github.io/docs'访问该项目，也就是说能无限展示子站点。用docsify搭建一个文档站是很不错的选择\
 [ref: 如何用Github的gh-pages分支展示自己的项目](https://cloud.tencent.com/developer/article/1391619)
 
-- 推送至仓库
-```c
-# 展示项目下子文件
-git subtree push --prefix=dist origin gh-pages
-
-# 展示整个项目
-text git:(master) git symbolic-ref HEAD refs/heads/gh-pages
-git add -A
-git commit -m "..."
-git push origin gh-pages
-```
 诸位可以访问我的博客[apeishuai](https://apeishuai.github.io)和[apeishuai/docs](https://apeishuai.github.io/docs)来看效果。完毕！
+
+<!--# 展示项目下子文件-->
+<!--```c-->
+<!--git subtree push --prefix=dist origin gh-pages-->
+<!--```-->
+
+<!--# 展示整个项目-->
+<!--```c-->
+<!--text git:(master) git symbolic-ref HEAD refs/heads/gh-pages-->
+<!--git add -A-->
+<!--git commit -m "..."-->
+<!--git push origin gh-pages-->
+<!--```-->
 
 # QA
 2023-11-02_00:03:51\
 新建目录下放index.md，hugo引擎会自动索引。至于索引文件夹下内容，需要在模板更改，位置暂时不找了
+
+2024/07/10\
+该文章基本囊括所有内容，不再做更新

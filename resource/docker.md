@@ -1,11 +1,13 @@
+# 概述
 docker是一种虚拟化手段，通过重新组织计算机资源，并提供一套管理系统，来达到摆脱具体的计算机硬件的目的\
 docker提供一套文件系统，所以其具有原生Linux调用资源的速度\
-[[https://hub.docker.com/search?q=][dockerhub]]
-
+[rsc : dockerhub](https://hub.docker.com/search?q=)
 
 # 安装
-curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
+```bash
+curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun 
 curl -sSL https://get.daocloud.io/docker | sh
+```
 
 # 架构
 

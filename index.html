@@ -29,8 +29,25 @@ window.$docsify = {
     target: 'h2, h3, h4, h5, h6',
     ignoreHeaders:  ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
   },
+
+  markdown: {
+    renderer: {
+        image: function(href, title, text) {
+        var image_html = this.origin.image.apply(this, arguments)
+        return '<figure>' + image_html + '<figcaption>' + text +
+                '</figcaption></figure>'
+                }
+            }
+        }
+
 }
 </script>
+
+<style>
+  figure {
+      text-align: center
+  }
+</style>
 
 
 

@@ -1,7 +1,33 @@
+# 设计通用
+## [标准](resource/标准相关.md)
+
 # 行业-saas
 ## [主机](resource/host.md)
 ## [前端](resource/front.md)
-## [Linux](resource/linux.md)
+
+# 行业-机械设计
+## 设计
+## 出图
+
+# 行业-嵌入式软件开发
+## 51单片机
+## rtos
+## STM32开发
+## 裸机开发
+## 硬件原理图
+
+# 行业-电气设计
+## [电气制图](resource/电气制图标准.md)
+## [电路设计](resource/电气-电路设计.md)
+## [配电计算](resource/配电计算.md)
+## [元器件选型](resource/电气元件选型.md)
+## PLC编程
+## 电气产品
+### 低压控制柜
+## 行业解决方案
+## 报价
+## [现场装配及调试](resource/现场装配及调试.md)
+
 
 # 编程语言
 语言学习路径:
@@ -36,41 +62,26 @@
 ## [emacs-lisp](resource/emacs-lisp.md)
 ## [node.js](resource/nodejs.md)
 
+#OS
+## [Linux](resource/linux.md)
 
 # 服务
+- [X] 博客
+- [ ] docsify
+- [ ] yacy p2p search
 ## [博客](resource/blog.md)
 ## [docsify文档](resource/docs.md)
 ## [yacy p2p搜索引擎](resource/yacy.md)
-## [fxd 消息推送](resource/fxd.md)
+<!--## [fxd 消息推送](resource/fxd.md)-->
 
 # 工具
 ## 虚拟机
-### [docker](resource/docker.md)
-### [qemu](resource/qemu.md)
-## 工具
-### [mysql](resource/mysql.md)
-## 命令行工具
-### [git](resource/git.md)
-### [tmux](resource/tmux.md)
-### [scoop](resource/scoop.md)
-## 格式化文本
-### [markdown](https://markdown.com.cn/basic-syntax/htmls.html)
-### [latex](resource/latex.md)
-### [markdown->思维导图](resource/markmap.md)
-
-# 行业-嵌入式软件开发
-## 51单片机
-## rtos
-## STM32开发
-## 裸机开发
-## 硬件原理图
-
-# 行业-电气设计
-## 制图标准
-## 电路设计
-## 配电计算
-## 元器件选型
-## PLC编程
-## 行业解决方案
-## 报价
-## 现场装配及调试
+## [docker](resource/docker.md)
+## [qemu](resource/qemu.md)
+## [mysql](resource/mysql.md)
+## [git](resource/git.md)
+## [tmux](resource/tmux.md)
+## [scoop](resource/scoop.md)
+## [markdown](https://markdown.com.cn/basic-syntax/htmls.html)
+## [latex](resource/latex.md)
+<!--## [markdown->思维导图](resource/markmap.md)-->

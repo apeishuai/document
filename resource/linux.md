@@ -1,5 +1,17 @@
 OS:Debian
 
+# 前置准备
+## 安装ubuntu
+[rufus](https://rufus.ie/zh/)\
+[ubuntu iso desktop](https://ubuntu.com/download/desktop)\
+系统启动boot选择u盘即可
+## 配置ubuntu
+[linux config bash脚本](https://github.com/apeishuai/bash/tree/master/linux)
+
+
+
+
+
 # 内核
 ```
 uname
@@ -645,6 +657,20 @@ ping -W 2 targethost
    - 使用过滤器来只显示符合条件的数据包，如IP地址、协议、端口等：
    tcpdump host 192.168.1.1
 ```
+## perf
+perf is powerful: it can instrument CPU performance counters, tracepoints, kprobes, and uprobes (dynamic tracing). It is capable of lightweight profiling. It is also included in the Linux kernel, under tools/perf, and is frequently updated and enhanced.
+
+基于ubuntu x86_64 v20.04安装perf
+```bash
+apt install linux-tools-common
+apt install linux-tools-5.13.0-40-generic
+apt install linux-cloud-tools-5.13.0-40-generic
+```
+
+```bash
+perf -v
+```
+
 ## tshark
 
 ```markdown
