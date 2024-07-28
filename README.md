@@ -1,5 +1,15 @@
+# TODO:
+- [ ] 电气设计规范
+- [ ] 接地
+- [ ] solidworks基本操作
+- [ ] 机加工方法
+
+# Log:
+
+
 # 设计通用
 ## [标准](resource/标准相关.md)
+https://kdocs.cn/l/cm6cAsgwQNDD
 
 # 行业-saas
 ## [主机](resource/host.md)
@@ -21,7 +31,8 @@
 ## [电路设计](resource/电气-电路设计.md)
 ## [配电计算](resource/配电计算.md)
 ## [元器件选型](resource/电气元件选型.md)
-## PLC编程
+## [PLC编程](resource/plc.md)
+## [触摸屏](resource/chumopin.md)
 ## [电气产品](resource/电气产品.md)
 ### 低压控制柜
 ## 行业解决方案
@@ -62,7 +73,7 @@
 ## [emacs-lisp](resource/emacs-lisp.md)
 ## [node.js](resource/nodejs.md)
 
-#OS
+# OS
 ## [Linux](resource/linux.md)
 
 # 服务
@@ -76,6 +87,7 @@
 
 # 工具
 ## 虚拟机
+## [autohotkey](resource/autohotkey.md)
 ## [docker](resource/docker.md)
 ## [qemu](resource/qemu.md)
 ## [mysql](resource/mysql.md)
@@ -84,4 +96,5 @@
 ## [scoop](resource/scoop.md)
 ## [markdown](https://markdown.com.cn/basic-syntax/htmls.html)
 ## [latex](resource/latex.md)
+## [wireshark](resource/wireshark.md)
 <!--## [markdown->思维导图](resource/markmap.md)-->
