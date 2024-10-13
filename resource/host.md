@@ -1,31 +1,31 @@
-# 硬件采购
-
-
-# 选择操作系统
-debian (ref:linux.md)
-
-# 配置内核
-```
-1 uname -a
-uname [OPTION]...
-Print certain system infomation. with no OPTION, same as -s
-
-
-2 cat /proc/version
-```
+# service using
+[极光推送](https://www.jiguang.cn/)\
+[taro 小程序开发](https://docs.taro.zone/docs/GETTING-STARTED)\
+[墨刀 原型图设计](https://modao.cc/team/splqt7hihpnlpee6)
 
 # 初始化配置
 ## ssh登录
 ```
-1 本地生成的id_rsa.pub内容复制到~/.ssh/authorized_keys
-2 vim ~/.ssh/config
+1 重新安装openssh服务
+apt-get remove -y openssh-server
+sudo apt update
+sudo apt-get install -y ssh
+sudo syetemctl status sshd
+sudo vim /etc/ssh/sshd_config
+
+sudo sytemctl restart ssh
+
+2 配置ssh登录
+本地生成的id_rsa.pub内容复制到~/.ssh/authorized_keys
+vim ~/.ssh/config
 	增加主机相关内容，id_rsa.pub地址
-3 ssh ucloud登录(免密码)
-4 vim /etc/ssh/sshd_config
+ssh ucloud登录(免密码)
+vim /etc/ssh/sshd_config
 	开放
 	service sshd restart
 
-//简化版本
+
+3 配置ssh登录，简化版
 ssh-keygen -t rsa -f ~/.ssh/ucloud_shuai
 ssh-copy-id -i ~/.ssh/ucloud_ubuntu user@remotehost
 ssh user@remotehost
@@ -38,59 +38,18 @@ Host ucloud_root
 	Port 22
 	IdentityFile ~/.ssh/ucloud_root
 
-
+4 其他操作
 pwsswd直接修改用户密码
 ```
-
-# 操作系统配置
-查看硬件信息
-```bash
-lscpu
-lsblk
-lshw
-lspci
-lsusb
-dmidecode
-df
-free
-ifconfig
-/proc/cpuinfo
-/proc/meminfo
-/proc/partitions
-/proc/net
-```
-# 数据、服务迁移
-数据备份特别麻烦，所以服务器在身边比较好
-
-# 生产环境
-# CI/CD服务
-
-# 现状分析
-## 负载
-## 请求量
 ## service
 ```service normal
 systemctl list-units --type=service //列出所有服务
 systemctl start/stop/restart/status enable/disable <service>
 ```
-
 sudo netstat -tunlp | grep {port}
 
-
-### nginx
-```
-查看Nginx配置文件路径：
-nginx -t
-nginx -v
-重新加载Nginx配置：
-sudo systemctl reload nginx
-
-启动Nginx服务：
-sudo systemctl start/stop/restart nginx
-sudo systemctl status nginx
-设置Nginx开机自启动：
-sudo systemctl enable/disable nginx
-```
+### v2raya
+[v2raya quick start](https://v2raya.org/docs/prologue/quick-start/)
 
 ### mysql
 ```
@@ -134,7 +93,20 @@ service mysql start/stop/status
 
 查看服务器状态：SHOW STATUS;
 ```
+### nginx
+```
+查看Nginx配置文件路径：
+nginx -t
+nginx -v
+重新加载Nginx配置：
+sudo systemctl reload nginx
 
+启动Nginx服务：
+sudo systemctl start/stop/restart nginx
+sudo systemctl status nginx
+设置Nginx开机自启动：
+sudo systemctl enable/disable nginx
+```
 
 ```service 防火墙
 firewalld iptables ufw
@@ -233,6 +205,48 @@ systemctl unmask firewalld
 iptables 是与最新的 3.5 版本 Linux 内核集成的 IP 信息包过滤系统。如果 Linux 系统连接到因特网或 LAN、服务器或连接 LAN 和因特网的代理服务器， 则该系统有利于在 Linux 系统上更好地控制 IP 信息包过滤和防火墙配置。
 ```
 
+
+
+
+# 硬件采购
+# 选择操作系统
+debian (ref:linux.md)\
+arch\
+# 配置内核
+```
+1 uname -a
+uname [OPTION]...
+Print certain system infomation. with no OPTION, same as -s
+
+2 cat /proc/version
+```
+
+# 操作系统配置
+查看硬件信息
+```bash
+lscpu
+lsblk
+lshw
+lspci
+lsusb
+dmidecode
+df
+free
+ifconfig
+/proc/cpuinfo
+/proc/meminfo
+/proc/partitions
+/proc/net
+```
+# 数据、服务迁移
+数据备份特别麻烦，所以服务器在身边比较好
+
+# 生产环境
+# CI/CD服务
+
+# 现状分析
+## 负载
+## 请求量
 ## ip/port
 
 
